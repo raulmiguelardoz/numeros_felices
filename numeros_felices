@@ -1,0 +1,29 @@
+#Numeros Felices
+
+
+def numeros_felices(num):
+    sumas_hechas=[]
+    while True:
+        digitos=list(map(int,str(num)))
+        num=sum(list(map(lambda dig: dig**2,digitos)))
+        if num==1:
+            print(True)
+            break
+        if num in sumas_hechas:
+            print(False)
+            break
+        sumas_hechas.append(num)
+    
+    
+numeros_felices(82)
+numeros_felices(7)
+numeros_felices(19)
+numeros_felices(5)
+
+
+#RESULTADO
+TRUE
+TRUE
+TRUE
+FALSE
+
