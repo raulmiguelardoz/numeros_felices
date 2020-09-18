@@ -1,5 +1,13 @@
 #Numeros Felices
 
+#Los números felices se definen como todos aquellos números, positivos, cuya suma de los cuadrados de sus dígitos (se repite el proceso cuantas veces sea necesario)
+#de como resultado 1.
+
+#Por ejemplo, 82 es un número feliz ya que:
+#8^2+2^2=68
+#6^2+8^2=100
+#1^2+0^2+0^2=1
+
 
 def numeros_felices(num):
     sumas_hechas=[]
@@ -26,4 +34,5 @@ TRUE
 TRUE
 TRUE
 FALSE
+
 
